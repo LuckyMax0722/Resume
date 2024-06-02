@@ -30,13 +30,22 @@
   SmallCapsFont = Fontin-SmallCaps
 ]{texgyretermes}
 
+%\RequirePackage[
+%  a4paper,
+%  left=0.8in,
+%  right=0.8in,
+%  top=0.70in,
+%  bottom=0.55in,
+%  nohead
+%]{geometry}
+
 \RequirePackage[
-	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
-	nohead
+  a4paper,
+  left=0.2in,
+  right=0.2in,
+  top=0.1in,
+  bottom=0.1in,
+  nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
@@ -53,20 +62,66 @@
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
   [\titlerule]                 % Inserts a horizontal line after the heading
-\titlespacing*{\section}{0cm}{*1.8}{*1.8}
+\titlespacing*{\section}{0cm}{*0.8}{*0.8}
 
 \titleformat{\subsection}
   {\large\raggedright}
   {}{0em}
   {}
-\titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
+\titlespacing*{\subsection}{0cm}{*0.5}{*0.1}
 
 \newcommand{\datedsection}[2]{%
   \section[#1]{#1 \hfill #2}%
 }
+
 \newcommand{\datedsubsection}[2]{%
   \subsection[#1]{#1 \hfill #2}%
 }
+
+\newcommand{\edusubsection}[2]{%
+  \subsection[#1]{
+  \makebox[7.5cm][l]{#1}
+  \hfill #2}%
+}
+
+\newcommand{\coursesubsection}[2]{%
+  \subsection[#1]{
+  \makebox[3cm][l]{\textit{#1}}
+  {#2}}%
+}
+
+\newcommand{\worksubsection}[2]{%
+  \subsection[#1]{
+  \makebox[7.5cm][l]{#1}
+  \hfill #2}%
+}
+
+\newcommand{\workpossubsection}[2]{%
+  \subsection[#1]{
+  \makebox[7.5cm][l]{\normalsize{#1}}
+  \hfill \normalsize{#2}}%
+}
+
+
+\newcommand{\itsubsection}[2]{%
+  \subsection[#1]{
+  \normalsize 
+  \makebox[5cm][l]{#1}
+  #2}%
+}
+
+\newcommand{\itemsubsection}[7]{%
+  \subsection[#1]{
+  \normalsize 
+  \makebox[5cm][l]{#1}
+  \makebox[2cm][l]{#2}
+  \makebox[2cm][l]{#3}
+  \makebox[2cm][l]{#4}
+  \makebox[2cm][l]{#5}
+  \makebox[2cm][l]{#6}
+  \hfill #7}%
+}
+
 \newcommand{\datedline}[2]{%
   {\par #1 \hfill #2 \par}%
 }
