@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1717323728 "resume.xdv" "resume.pdf" "resume" 1717323728 0
-  "resume.xdv" 1717323728 91948 fa03789cf60c64396e9c6b0a4142f04a "xelatex"
+["xdvipdfmx"] 1720966203 "resume.xdv" "resume.pdf" "resume" 1720966204 0
+  "resume.xdv" 1720966203 91976 dfe368b1c6a05c28cdf9e1af1e946baf "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1717323725 "resume.tex" "resume.xdv" "resume" 1717323728 0
+["xelatex"] 1720966200 "resume.tex" "resume.xdv" "resume" 1720966204 0
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1680088560 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1680094255 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "c:/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1680086187 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -74,10 +74,10 @@
   "fontawesome.sty" 1630830534 2828 ec82d2185059d2978744ff07b8dadd99 ""
   "fontawesomesymbols-generic.tex" 1630830534 33234 a3a3e12d9315f667a3e24bd6b3d6058b ""
   "fontawesomesymbols-xeluatex.tex" 1630830534 45782 7166bfdff927bad3f81e302543d76c90 ""
-  "resume.aux" 1717323728 5618 2883fea8b7e27e156bd7ceab68539b19 "xelatex"
+  "resume.aux" 1720966203 5620 f6fd58abfa0929f1a593104bacdab36e "xelatex"
   "resume.cls" 1717321052 4093 38b795caea674f80d6524b2d61a84cc4 ""
-  "resume.out" 1717323728 7851 283aa800799774b357746bf8ae862609 "xelatex"
-  "resume.tex" 1717323721 10795 262561389ff168946a09b24aa4cb50fa ""
+  "resume.out" 1720966203 7861 c9cd353a84b0db88480670db1b64db14 "xelatex"
+  "resume.tex" 1720966199 10797 dfc32506f9565f6154de2a37c11af724 ""
   (generated)
   "resume.aux"
   "resume.log"
