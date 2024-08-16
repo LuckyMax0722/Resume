@@ -63,13 +63,13 @@
   {}                           % Can be used to insert code before the heading
   [\titlerule]                 % Inserts a horizontal line after the heading
 %\titlespacing*{\section}{0cm}{*1.8}{*1.8}
-\titlespacing*{\section}{0cm}{*0.8}{*0.8}
+\titlespacing*{\section}{0cm}{*0.5}{*0.5}
 \titleformat{\subsection}
   {\large\raggedright}
   {}{0em}
   {}
 %\titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
-\titlespacing*{\subsection}{0cm}{*0.7}{*0.2}
+\titlespacing*{\subsection}{0cm}{*0.5}{*0.2}
 
 \newcommand{\datedsection}[2]{%
   \section[#1]{#1 \hfill #2}%
@@ -109,16 +109,17 @@
 %  \subsection[#1]{\normalsize \makebox[4.5cm][l]{#1} #2 \hfill #3}%
 %}
 
-\newcommand{\itemsubsection}[7]{%
+\newcommand{\itemsubsection}[8]{%
   \subsection[#1]{
   \normalsize 
-  \makebox[5.5cm][l]{#1}
-  \makebox[1.5cm][l]{#2}
+  \makebox[2cm][l]{#1}
+  \makebox[3.5cm][l]{#2}
   \makebox[1.5cm][l]{#3}
   \makebox[1.5cm][l]{#4}
   \makebox[1.5cm][l]{#5}
   \makebox[1.5cm][l]{#6}
-  \hfill #7}%
+  \makebox[1.5cm][l]{#7}
+  \hfill #8}%
 }
 
 
@@ -166,8 +167,13 @@
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
 
+%\newcommand{\basicInfo}[1]{
+%  \centerline{\sffamily\large{#1}}
+%  \vspace{1.5ex}
+%}
+
 \newcommand{\basicInfo}[1]{
-  \centerline{\sffamily\large{#1}}
+  {\sffamily\large\raggedright #1}
   \vspace{1.5ex}
 }
 
