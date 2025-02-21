@@ -49,13 +49,12 @@
 
 \basicInfo{
   \email{jiachen\_lu1999@163.com} \textperiodcentered\ 
-  \phone{(+86) 139-1860-2264} \textperiodcentered\ 
-  \linkedin[Linkedin.com/Jiachen Lu]{https://www.linkedin.com/in/jiachen-lu-08b85a1bb/}
+  \phone{(+86) 139-1860-2264}
 }
 
 \basicInfo{
-  \github[Github.com/Jiachen Lu]{https://github.com/LuckyMax0722} \textperiodcentered\ 
-  \homepage[\sout{Homepage.com/Jiachen Lu}]{https://luckymax0722.github.io/}
+  \linkedin[Linkedin.com/Jiachen Lu]{https://www.linkedin.com/in/jiachen-lu-08b85a1bb/}  \textperiodcentered\ 
+  \github[Github.com/Jiachen Lu]{https://github.com/LuckyMax0722}
 }
 
 
@@ -84,10 +83,10 @@
   {\textbf{车辆服务工程}\ |\ \textit{工学学士(B.Eng.)}}
   {2017.10—2022.04}
   \gpasubsection{核心课程：}{高等数学, 大学物理, 力学, 电学, 控制理论, 车辆工程，传感器与执行器等}{GPA: 80/100}
-\vspace{0.1cm}
+\vspace{0.4cm}
 
 \section{\faUsers\ 工作经历}
-\worksubsection{\textbf{保时捷工程服务公司}, 门斯海姆, 德国}{\textbf{ADAS测试开发工程师}\ |\ \textit{实习}}{2024.04—2024.09}
+\worksubsection{\textbf{保时捷工程服务公司}, 门斯海姆, 德国}{\textbf{ADAS算法开发工程师}\ |\ \textit{实习}}{2024.04—2024.09}
 \ \textit{技术栈:\ Python/PyTorch/PyTorch Lightning/Jira/Confluence/Codebeamer}
 \begin{itemize}
   \item 支持人工智能团队的日常工作，完成单目相机三维场景重建相关的子任务。基于\textbf{LATR}，一种3D车道线检测模型，实现了推理和可视化的脚本，用于检测和分类道路边界和围栏。基于\textbf{SignParser}复现了项目的部分代码，用于识别和理解基于文本的交通标志。复现了\textbf{Metric3D}，一种用于重建三维交通标志的模型。整合上述模型的输出，并在模拟器中实时生成真实世界的三维模型
@@ -97,7 +96,7 @@
 \end{itemize}
 \vspace{0.1cm}
 
-\worksubsection{\textbf{戴姆勒卡车公司}, 斯图加特, 德国}{\textbf{充电系统测试开发工程师}\ |\ \textit{学士论文}}{2021.10—2022.03}
+\worksubsection{\textbf{戴姆勒卡车公司}, 斯图加特, 德国}{\textbf{充电系统开发工程师}\ |\ \textit{学士论文}}{2021.10—2022.03}
 \ \textit{论文题目:\ 开发用于研究充电系统控制单元和软件模块的残余总线模拟以及测试概念}
 
 \ \textit{技术栈:\ CAPL/Vector CANoe/Hardware-in-the-loop(HiL)/
@@ -110,7 +109,7 @@ Restbussimulation}
 \end{itemize}
 \vspace{0.1cm}
 
-\worksubsection{\textbf{戴姆勒卡车公司}, 埃斯林根, 德国}{\textbf{高压组件测试开发工程师}\ |\ \textit{实习}}{2021.05—2021.10}
+\worksubsection{\textbf{戴姆勒卡车公司}, 埃斯林根, 德国}{\textbf{高压组件开发工程师}\ |\ \textit{实习}}{2021.05—2021.10}
 \ \textit{技术栈:\ CAPL/Vector CANape/Vector CANalyzer}
 \begin{itemize}
   \item 支持全球团队日常开发和测试eActros电动卡车动力系统中的高压电阻组件
@@ -118,16 +117,22 @@ Restbussimulation}
   \item 基于CANape设计并构建可视化的图形用户界面(GUI)，用于实时监控测试车辆特定组件的运行状态。并编写组件测试脚本，通过监控CAN-Bus实现来实现测试数据的监测，收集和在线分析
   \item 基于CAPL和CANape的数据挖掘功能，开发并编写用于离线评估测试车辆特定组件的\textbf{自动化数据挖掘脚本}
 \end{itemize}
-\vspace{0.1cm}
+\vspace{0.4cm}
 
 \section{\faFolder\ 项目经历}
 \projsubsection{\textbf{硕士论文: 基于单目相机的3D语义场景补全}}{2024.08—2025.06}
-\ \textit{技术栈:\ Python/Pytorch \hfill 项目链接:\ }
+\ \textit{技术栈:\ Python/Pytorch/Pytorch Lightening \hfill 项目链接:\ }
 \begin{itemize}
-  \item 基于\textbf{MonoScene}和\textbf{VoxFormer}的开发
-\end{itemize}
-\vspace{0.1cm}
+  \item 设计并开发基于单目RGB图像的面向占用网络(Occupancy Network)的场景补全和语义预测的精细化模块
+  
+  \item 基于渐进式邻域融合注意力模块(PNA-3D)设计了3D U-Net层级特征聚合架构，有效改善了每个占用网格对邻近区域的空间感知和语义预测能力
 
+  \item 构建级联coarse-to-fine优化框架，将生成的低分辨率的粗粒度占用网络，通过三线性插值与PNA-3D模块迭代优化至高分辨率，并结合跨尺度特征拼接策略，有效提升了模型的场景解析与占用网络预测能力
+
+  \item 在SemanticKITTI验证集中，该模块的轻量版相较于基线模型\textbf{CGFormer}提升了约\textbf{0.3\% mIoU}，而模块的完整版相较于\textbf{CGFormer}提升了约\textbf{0.6\% mIoU}，超越了现有的SOTA模型 
+\end{itemize}
+
+\newpage
 \projsubsection{\textbf{TOD2D: 2D图像的道路物体目标检测和分类}}{2024.03—2024.07}
 \ \textit{技术栈:\ Python/Pytorch/OpenCV/YOLOv5-v9/DETR/SwinT/ResNet/EfficientNet \hfill 项目链接:\ \href{https://github.com/LuckyMax0722/TOD2D}{TOD2D}}
 \begin{itemize}
@@ -158,22 +163,31 @@ Restbussimulation}
   \item 在训练模型的过程中，使用了基于\textbf{Teacher Forcing}的监督学习和基于\textbf{Self-Critical}的强化学习
   \item 在ScanRefer数据集中，SoftCap在定位和描述3D点云场景中的物体时表现良好，\textbf{mAP@0.5IoU}达到了\textbf{57.38}，\textbf{CIDEr@0.5IoU}达到了\textbf{36.27}。 与之前的工作相比，SoftCap的性能提高了 \textbf{140\%}
 \end{itemize}
-\vspace{0.1cm}
+\vspace{0.4cm}
 
 \section{\faStar\ 奖项}
 
 \begin{itemize}
   \item \itemsubsection{\textbf{菲尼克斯奖学金}}{}{}{}{}{}{}{获得时间: 2020.09}
 \end{itemize}
-\vspace{0.1cm}
+\vspace{0.4cm}
 
 \section{\faCogs\ IT 技能}
 \begin{itemize}
-  \item \textbf{编程语言:} Python, C++, CAPL, Matlab/Simulink
-  \item \textbf{常用工具:} Pytorch, Pytorch Lightening, NumPy, OpenCV, mm-toolkit, Pandas, Git, Docker
-  \item \textbf{常用软件:} Word/Excel/PowerPoint, Vector CANoe/CANape/CANalyzer, AutoCAD, CATIA V5
+  \item \itemsubsection{\textbf{编程语言:}}{Python, C++, CAPL, Matlab/Simulink}{}{}{}{}{}{}
+
+  \vspace{0.1cm}
+
+  \item \itemsubsection{\textbf{常用工具:}}{Pytorch, Pytorch Lightening}{}{}{}{}{}{}
+        \itemsubsection{}{NumPy, OpenCV, Pandas, Git, Docker}{}{}{}{}{}{}
+        \itemsubsection{}{MMCV, MMDetection, MMDetection3D, MMSegmentation}{}{}{}{}{}{}
+
+  \vspace{0.1cm}
+
+  \item \itemsubsection{\textbf{常用软件:}}{Word/Excel/PowerPoint, Vector CANoe/CANape/CANalyzer, AutoCAD, CATIA V5}{}{}{}{}{}{}
+
 \end{itemize}
-\vspace{0.1cm}
+\vspace{0.4cm}
 
 \section{\faLanguage\ 语言能力}
 % increase linespacing [parsep=0.5ex]
@@ -191,7 +205,7 @@ Restbussimulation}
   \item \itemsubsection{\textbf{德语(C1):}}{德福(TestDaF)}
   {总分:15}{听力:3}{阅读:4}{写作:4}{口语:4}{获得成绩时间: 2021.12}
 \end{itemize}
-\vspace{0.1cm}
+\vspace{0.4cm}
 
 \section{\faWrench\ 其他技能}
 % increase linespacing [parsep=0.5ex]
